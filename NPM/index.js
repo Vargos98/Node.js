@@ -12,7 +12,7 @@
 
 import superheroes from "superheroes";
 
-const name = superheroes.random();
+
 
 for (var i =0;i<5;i++){
     const name = superheroes.random();
