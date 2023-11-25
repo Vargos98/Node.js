@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+ 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "umesh",
   "license": "ISC",
   "dependencies": {
+    "figlet": "^1.7.0",
+    "one-liner-joke": "^1.2.2",
     "sillyname": "^0.1.0",
     "superheroes": "^3.0.0"
   }
