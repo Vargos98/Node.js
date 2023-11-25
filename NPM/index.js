@@ -42,21 +42,22 @@ const express = require("express");
 const app = express();
 const port =3000;
 
-app.use(function(req,res,next){
-    console.log("I worked first");
-    next();
-});
+// app.use(function(req,res,next){
+//     console.log("I worked first");
+//     next();
+// });
+app.set("view engine", "ejs");
 
 app.get('/', function(req,res){
-    res.send("hi");
+    res.render("index");
   
 })
 
 app.get('/pro', function(req,res){
     res.send("hi from pro")
 })
-app.get('/noob', function(req,res){
-    res.send("hi from noob")
+app.get('/noob/:username', function(req,res){
+    res.send(`Hi from ${req.params.username}`);
 })
 
 app.listen(port);
