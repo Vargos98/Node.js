@@ -24,15 +24,33 @@
 // console.log(oneLinerJoke.getRandomJoke());
 
 
-/// FIGLET CODE
+// /// FIGLET CODE
 
-var figlet = require("figlet");
+// var figlet = require("figlet");
 
-figlet("Hello World!!", function (err, data) {
-  if (err) {
-    console.log("Something went wrong...");
-    console.dir(err);
-    return;
-  }
-  console.log(data);
-});
+// figlet("VARGOS", function (err, data) {
+//   if (err) {
+//     console.log("Something went wrong...");
+//     console.dir(err);
+//     return;
+//   }
+//   console.log(data);
+// });
+
+
+const express = require("express");
+const app = express();
+const port =3000;
+
+app.get('/', function(req,res){
+    res.send("hi")
+})
+
+app.get('/pro', function(req,res){
+    res.send("hi from pro")
+})
+app.get('/noob', function(req,res){
+    res.send("hi from noob")
+})
+
+app.listen(port);
