@@ -43,12 +43,13 @@ const app = express();
 const port =3000;
 
 app.use(function(req,res,next){
-    console.log("Hi finish prompt to move next");
+    console.log("I worked first");
     next();
 });
 
 app.get('/', function(req,res){
-    res.send("hi")
+    res.send("hi");
+  
 })
 
 app.get('/pro', function(req,res){
@@ -59,3 +60,22 @@ app.get('/noob', function(req,res){
 })
 
 app.listen(port);
+
+
+
+// const express = require("express")
+
+// const app = express();
+
+// const port = 3000;
+// app.use(function(res,req,next){
+//     console.log("Hi there i worked first");
+//     next();
+// })
+
+
+// app.get('/' ,function(res,req){
+//     res.send("Hi there");
+// });
+
+// app.listen(port);
