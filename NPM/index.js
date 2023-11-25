@@ -42,6 +42,11 @@ const express = require("express");
 const app = express();
 const port =3000;
 
+app.use(function(req,res,next){
+    console.log("Hi finish prompt to move next");
+    next();
+});
+
 app.get('/', function(req,res){
     res.send("hi")
 })
