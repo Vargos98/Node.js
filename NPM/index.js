@@ -53,8 +53,8 @@ app.get('/', function(req,res){
   
 })
 
-app.get('/pro', function(req,res){
-    res.send("hi from pro")
+app.get('/contact', function(req,res){
+    res.render("contact")
 })
 app.get('/noob/:username', function(req,res){
     res.send(`Hi from ${req.params.username}`);
