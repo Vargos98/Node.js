@@ -38,29 +38,29 @@
 // });
 
 
-const express = require("express");
-const app = express();
-const port =3000;
+// const express = require("express");
+// const app = express();
+// const port =3000;
 
 // app.use(function(req,res,next){
 //     console.log("I worked first");
 //     next();
 // });
-app.set("view engine", "ejs");
+// app.set("view engine", "ejs");
 
-app.get('/', function(req,res){
-    res.render("index");
+// app.get('/', function(req,res){
+//     res.render("index");
   
-})
+// })
 
-app.get('/contact', function(req,res){
-    res.render("contact")
-})
-app.get('/noob/:username', function(req,res){
-    res.send(`Hi from ${req.params.username}`);
-})
+// app.get('/contact', function(req,res){
+//     res.render("contact")
+// })
+// app.get('/noob/:username', function(req,res){
+//     res.send(`Hi from ${req.params.username}`);
+// })
 
-app.listen(port);
+// app.listen(port);
 
 
 
@@ -80,3 +80,21 @@ app.listen(port);
 // });
 
 // app.listen(port);
+
+
+
+// let age =16;
+
+// let name = age < 18 ? "vargos": "alaha"; 
+// console.log(name);
+
+
+let arr = [1,2,12, 40,58,21];
+let brr= [98,22,32,34,98];
+
+const crr = [...arr,...brr];
+
+console.log(crr);
+
+// const name = arr.filter(x => x <50 );
+// console.log(name);
