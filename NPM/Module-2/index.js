@@ -1,10 +1,14 @@
-// const greet = require("./greet");
+const greet = require("./greet");
 
 
-// greet("Vargos");
+
 
 const {person1, person2, person3} = require("./people");
 
-console.log(person1);
-console.log(person2);
-console.log(person3);
+// console.log(person1);
+// console.log(person2);
+// console.log(person3);
+
+greet(person1);
+greet(person2);
+greet(person3);
