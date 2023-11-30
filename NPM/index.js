@@ -89,12 +89,38 @@
 // console.log(name);
 
 
-let arr = [1,2,12, 40,58,21];
-let brr= [98,22,32,34,98];
+// let arr = [1,2,12, 40,58,21];
+// let brr= [98,22,32,34,98];
 
-const crr = [...arr,...brr];
+// const crr = [...arr,...brr];
 
-console.log(crr);
+// console.log(crr);
 
 // const name = arr.filter(x => x <50 );
 // console.log(name);
+
+// import superheros from "superheroes";
+
+// const name = superheros.random();
+
+// console.log(`I am a ${name}!`);
+
+
+import express from 'express';
+
+const app = express();
+
+const port = 3000;
+// app.use(function(res,req,next){
+//     console.log("Hi there i worked first");
+//     next();
+// })
+
+app.get("/", (req,res)=>{
+    res.send("<h1>Hi there! badonka budonka allah hu akhbar</h1>");
+})
+
+
+app.listen(port,()=>{
+    console.log(`port is running on ${port}`);
+});
